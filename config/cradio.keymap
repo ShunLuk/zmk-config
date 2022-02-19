@@ -35,7 +35,7 @@
     combos {
         compatible = "zmk,combos";
         caps_word {
-            timeout-ms = <250>;
+            timeout-ms = <400>;
             key-positions = <13 16>;
             layers = <0>;
             bindings = <&caps_word>;
