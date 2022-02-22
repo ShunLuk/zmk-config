@@ -14,7 +14,7 @@
 #define FUN_L 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
+&lt { quick_tap_ms = <250>; };
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -35,7 +35,7 @@
     combos {
         compatible = "zmk,combos";
         caps_word {
-            timeout-ms = <400>;
+            timeout-ms = <50>;
             key-positions = <13 16>;
             layers = <0>;
             bindings = <&caps_word>;
