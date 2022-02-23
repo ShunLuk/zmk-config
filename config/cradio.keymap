@@ -34,11 +34,29 @@
 
     combos {
         compatible = "zmk,combos";
-        caps_word {
+        combo_caps_word {
             timeout-ms = <50>;
             key-positions = <13 16>;
             layers = <0>;
             bindings = <&caps_word>;
+        };
+        combo_ble_prv {
+            timeout-ms = <50>;
+            key-positions = <25 7>;
+            layers = <0>;
+            bindings = <&kp BT_PRV>;
+        };
+        combo_ble_nxt {
+            timeout-ms = <50>;
+            key-positions = <25 8>;
+            layers = <0>;
+            bindings = <&kp BT_NXT>;
+        };
+        combo_ble_clr {
+            timeout-ms = <50>;
+            key-positions = <25 9>;
+            layers = <0>;
+            bindings = <&kp BT_CLR>;
         };
     };
     
@@ -67,7 +85,7 @@
             bindings = <
                 &kp TILDE   &kp N7     &kp N8      &kp N9          &kp MINUS     &kp LPAR     &kp SQT       &kp DQT   &kp SLASH   &kp RPAR
                 &kp GRAVE   &kp N4     &kp N5      &kp N6          &kp EQUAL     &kp SEMI     &hm LSHFT DOT &kp COMMA &kp QMARK   &kp EXCL
-                &kp N0      &kp N1     &kp N2      &kp N3          &kp FSLH      &kp LBKT     &kp AT        &kp AMPS  &kp DLLR    &kp RBKT
+                &kp N0      &kp N1     &kp N2      &kp N3          &kp BSLH      &kp LBKT     &kp AT        &kp AMPS  &kp DLLR    &kp RBKT
                                                    &kp ESC         &kp SPACE     &kp ENTER    &sl 3
             >;
         };
