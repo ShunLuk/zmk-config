@@ -40,24 +40,6 @@
             layers = <0>;
             bindings = <&caps_word>;
         };
-        combo_ble_prv {
-            timeout-ms = <50>;
-            key-positions = <25 7>;
-            layers = <0>;
-            bindings = <&kp BT_PRV>;
-        };
-        combo_ble_nxt {
-            timeout-ms = <50>;
-            key-positions = <25 8>;
-            layers = <0>;
-            bindings = <&kp BT_NXT>;
-        };
-        combo_ble_clr {
-            timeout-ms = <50>;
-            key-positions = <25 9>;
-            layers = <0>;
-            bindings = <&kp BT_CLR>;
-        };
     };
     
     keymap {
